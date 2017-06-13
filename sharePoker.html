@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>联众19周年168</title>
+<!--for baidu 识别移动端页面并禁止百度转码-->
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="applicable-device" content="mobile">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="address=no">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+<!--<link rel="stylesheet" href="src/styles/moble_Lz.css?20170510">-->
+<link rel="stylesheet" href="src/styles/moble_Lz.min.css?2017061301">
+</head>
+<body>
+<div id="share_content" style="width:500px;display: none">
+  <img id="share_pic" src="src/images/share-logo.jpg">
+</div>
+
+<div class="shade">
+    <div class="number"></div>
+</div>
+<div class="flipbook-viewport" style="display:none;" id="poker-page">
+    <div class="container">
+        <div class="flipbook">
+          <!-- 大厅开始页 -->
+          <div id="first" class="slide" style="background:#000 url(src/images/poker1.jpg) center center no-repeat;background-size:100%">
+            <div class="logo-first"></div>
+            <div class="logo-title">
+              <div class="point"></div>
+              <p>pw.lianzhong.com</p>
+            </div>
+            <div class="signal">
+              <div  class="iconfont">&#xe667;</div>
+            </div>
+          </div>
+          <!-- 时间故事 -->
+          <div class="public-page sj-page" style="background:#000 url(src/images/poker-bg.jpg) center bottom no-repeat;background-size:100%">
+            <div class="page-logo page-logo-right"></div>
+            <div class="content">
+              <div class="sj-content"></div>
+            </div>
+            <div class="sj-dz-bg">
+              <div class="sj-img-98">
+                <div class="sj-img"></div>
+                <div class="sj-title"></div>
+              </div>
+              <div class="sj-img-05">
+                <div class="sj-img"></div>
+                <div class="sj-title"></div>
+              </div>
+              <div class="sj-img-12">
+                <div class="sj-img"></div>
+                <div class="sj-title"></div>
+              </div>
+              <div class="sj-img-16">
+                <div class="sj-img"></div>
+                <div class="sj-title"></div>
+              </div>
+            </div>
+          </div>
+          <!-- 较量故事 -->
+          <div class="public-page jl-page" style="background:#000 url(src/images/poker-bg.jpg) center center no-repeat;background-size:100%">
+            <div class="page-logo page-logo-right"></div>
+            <div class="content">
+              <h3 class="jl-title"></h3>
+              <div class="poker-icon-bg"></div>
+              <div class="black-icon-bg"></div>
+              <div class="jl-content"></div>
+            </div>
+            <div class="jl-dz-bg"></div>
+          </div>
+          <!-- 比赛故事 -->
+          <div class="public-page dzbs-page" style="background:#000 url(src/images/poker-bg.jpg) center center no-repeat;background-size:100%">
+            <div class="page-logo page-logo-right"></div>
+            <div class="content">
+              <h3 class="dzbs-title"></h3>
+              <div class="poker-icon-bg"></div>
+              <div class="black-icon-bg"></div>
+              <div class="dzbs-content"></div>
+            </div>
+            <div class="dzbs-bg"></div>
+          </div>
+          <!-- 结束页 -->
+          <div  class="end-page" style="background:#000 url(src/images/corver.jpg) center center no-repeat;background-size:100%">
+            <div class="content">
+              <h3 class="end-title"></h3>
+              <h4 class="end-title-font">恭喜您</h4>
+              <div class="end-content"></div>
+            </div>
+            <div class="end-btn public-list-item ">
+              <div class="p-btns-end login-btn-section" id="share-login"><a href="login.html">登录查看<br>我的联众故事</a></div>
+              <div  class="share-btn-section" id="share-prize" style="display: none">
+                <div class="p-btns-end left" id="bags-btn">领取礼包</div><div class="p-btns-end left"  id="share-btn">分享<br>我的联众故事</div>
+              </div>
+            </div>
+         <!--   <div class="logo-title">pw.lianzhong.com</div>-->
+            <div id="top10-btns">排行榜</div>
+            <div id="share-ceng" style="display: none">
+              <div class="share-btn-title"></div>
+              <div id="share-btn-know">我知道了</div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- 弹窗 -->
+<div id="dialog-bg"  style="display: none"></div>
+<div id="dialog" class="top10" style="display: none">
+  <div id="dialog-close" ></div>
+  <div class="dialog-content top10-content">
+      <table class="rank-table"  cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th class="rank-unm-top">排名</th>
+            <th class="rank-name-top">门派名称</th>
+            <th class="rank-score-top">分享用户数</th>
+          </tr>
+        </thead>
+        <tbody id="rank-body"></tbody>
+      </table>
+    <div class="table-tips">*本排行榜数据每个整点刷新</div>
+  </div>
+</div>
+</body>
+<!--<script src="src/scripts/jquery.min.1.7.js"></script>
+<script src="src/scripts/modernizr.2.5.3.min.js"></script>
+<script src="src/scripts/common.js"></script>
+<script src="src/scripts/data.js"></script>
+<script src="src/scripts/apiConfig.js"></script>
+<script src="src/scripts/mobile_poker.js"></script>-->
+<!--<script src="dist/scripts/mainMobilePoker.min.js"></script>-->
+</html>

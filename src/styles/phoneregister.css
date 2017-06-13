@@ -1,0 +1,210 @@
+/* -------------------------[Reset]------------------------- */
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, blockquote, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0; }
+ul, ol { list-style: outside none; }
+fieldset, img { border: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+body, small, sup, sub, button, input, textarea, select { font: 12px/1 Microsoft YaHei,Arial, Helvetica, Verdana, SimSun, sans-serif; }
+body { line-height: 1.5; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+address, cite, dfn, em, var { font-style: normal; }
+code, kbd, pre, samp { font-family: "微软雅黑", Courier, SimSun, monospace; }
+sup, sub { position: relative; vertical-align: baseline; }
+sup { top: -3px; }
+sub { bottom: -3px; }
+a{
+	text-decoration: none;
+}
+img{
+	display:block;
+	border:none;
+	border:0;
+}
+html,body{
+	margin:0;
+	padding:0;
+	min-height:100%;
+}
+html{
+	background:url("../images/corver.jpg") no-repeat top center;
+  	background-size:cover;
+}
+.c{
+	zoom:1;
+}
+.c:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility:hidden;
+	overflow:hidden；
+}
+.login-page-logo{
+	width:7.5rem;
+	height:3.4rem;
+	background:url("../images/gl_logo_top.png") no-repeat top center;
+	background-size:100% 100%;
+}
+.register-container,.register-container-success{
+	width:6.23rem;
+	margin:0.2rem auto 2rem;
+	padding:0.4rem 0;
+	background:url("../images/gl_container_bg.png") repeat center;
+}
+.register-container span{
+	display:block;
+	width:5.6rem;
+	height:0.6rem;
+	line-height:0.6rem;
+	margin:0 auto;
+	color:#e6081f;
+	font-size:0.24rem;
+}
+.inp-phone,.inp-pw,.inp-code,.im_sure,.inp-pic{
+	position:relative;
+	width:4.9rem;
+	margin:0 auto;
+	height:0.78rem;
+	padding-left:0.7rem;
+}
+.inp-pic{
+	padding-left:0;
+	width:5.6rem;
+}
+.inp-pic input{
+	text-indent:0.2rem;
+}
+.inp-phone:before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:0.7rem;
+	background:url(../images/phone_small.png) no-repeat center #eee;
+	background-size:50%;
+}
+.inp-pw:before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:0.7rem;
+	background:url(../images/text_small.png) no-repeat center #eee;
+	background-size:70%;
+}
+.inp-code:before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:0.7rem;
+	background:url(../images/text_small.png) no-repeat center #eee;
+	background-size:70%;
+}
+.register-container input{
+	border:none;outline:none;
+	background:aliceblue;
+	height:100%;
+	width:100%;
+	background:#ffffff;
+	font-size:0.16rem;
+}
+.inp-code input{
+	width:2.9rem;
+	float:left;
+}
+.inp-pic input{
+	width:3.6rem;
+}
+.inp-code button{
+	width:1.9rem;
+	height:100%;
+	float:right;
+	border:none;
+	background:url(../images/gl_button_bg.png) no-repeat;
+	background-size:cover;
+	font-size:0.24rem;
+	color:#ffffff;
+	text-align:center;
+}
+.im_sure{
+	padding-left:0;
+	height:0.6rem;
+	overflow:hidden;
+}
+.im_sure_text{
+	width:3.2rem;
+	height:0.3rem;
+	margin:0.3rem auto 0;
+	background:url(../images/im_sure_text.png) no-repeat center;
+	background-size:100%;
+}
+.imgbox{
+	float:right;
+	width:1.9rem;
+	height:100%;
+}
+.register-btn{
+	display:block;
+	width:2.65rem;
+	height:0.7rem;
+	line-height:0.7rem;
+	color:#fff;
+	font-size:0.35rem;
+	margin:0.2rem auto;
+	border:none;
+	outline:none;
+	background:url(../images/register_btn.png) no-repeat center;
+	background-size:cover;
+}
+.register-container-success{
+	color:#ffffff;
+	text-align:center;
+}
+.register-container-success h2{
+	font-size:0.48rem;
+	line-height:0.8rem;
+}
+.txz,.y-account{
+	font-size:0.24rem;
+	padding-top:0.2rem;
+}
+.txz span,.y-account span{
+	color:#e6081f;
+}
+.tips-small{
+	color:#bbbbbb;
+}
+.y-account{
+	margin-top:0.6rem;
+}
+.get-s{
+	width:2.65rem;
+	height:0.7rem;
+	margin:0.6rem auto 0.3rem;
+	font-size:0.35rem;
+	color:#fff;
+	background:#e6081f;
+	border:none;
+	outline:none;
+}
+#captcha-box{
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.6);
+}
+#captcha-box-container{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:90%;
+	transform:translate(-50%,-50%);
+	z-index:100;
+}
